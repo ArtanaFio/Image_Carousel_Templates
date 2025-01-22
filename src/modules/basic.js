@@ -6,21 +6,18 @@ const rightBox = document.getElementById("next-box-1");
 const inactivePreviousButton = document.getElementById("inactive-prev");
 const inactiveNextButton = document.getElementById("inactive-next");
 const reel = document.getElementById("reel-1");
-const images = Array.from(document.querySelectorAll(".pic-1"));
 const circles = Array.from(document.querySelectorAll(".circle"));
 
 const activePrevButton = document.createElement("img");
 activePrevButton.src = activePrevSVG;
 activePrevButton.alt = "Previous";
-activePrevButton.classList.add("arrow-button", "active");
+activePrevButton.classList.add("arrow-button-1", "active");
 const activeNextButton = document.createElement("img");
 activeNextButton.src = activeNextSVG;
-activeNextButton.classList.add("arrow-button", "active");
+activeNextButton.classList.add("arrow-button-1", "active");
 
 let moveLeft = 0;
 let centerCircle = 0;
-
-console.log(`Starting point: moveLeft= ${moveLeft}px, image's index= ${centerCircle}`);
 
 circles[centerCircle].classList.add("active");
 

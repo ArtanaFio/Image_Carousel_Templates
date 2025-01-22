@@ -1,0 +1,70 @@
+:root {
+    --picture-width: 400px;
+    --picture-height: 200px;
+    --reel-width: 2400px;
+}
+
+.pic-2 {
+    width: var(--picture-width);
+    height: var(--picture-height);
+    opacity: 25%;
+}
+
+.pic-2.active {
+    opacity: 100%;
+}
+
+#carousel-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#top-2 {
+    display: flex;
+}
+
+#reel-2 {
+    width: var(--reel-width);
+    display: flex;
+    gap: 10px;
+    margin-left: var(--picture-width);
+}
+
+.viewport {
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+}
+
+#prev-box-1 {
+    left: 0px;
+}
+
+#next-box-1 {
+    right: 0px;
+}
+
+.arrow-button-2 {
+    width: 45px;
+}
+
+.arrow-button-2.active {
+    cursor: pointer;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #eac452;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #7a511d;
+}
+
+.dot.active {
+    background-color: #8c1af6;
+}
