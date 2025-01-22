@@ -1,0 +1,104 @@
+
+:root {
+    --picture-width: 800px;
+    --picture-height: 400px;
+    --reel-width: 4000px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 5vh;
+}
+
+.pic-1 {
+    width: var(--picture-width);
+    height: var(--picture-height);
+}
+
+#carousel-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#top-1 {
+    display: flex;
+}
+
+.album {
+    display: flex;
+}
+
+#reel-1 {
+    width: var(--reel-width);
+}
+
+.picture-frame {
+    position: relative;
+    width: var(--picture-width);
+    overflow: hidden;
+}
+
+.side-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#prev-box-1 {
+    left: 0px;
+}
+
+#next-box-1 {
+    right: 0px;
+}
+
+.arrow-button {
+    width: 75px;
+}
+
+.arrow-button.active {
+    cursor: pointer;
+}
+
+.navigation-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #b2a8d3;
+    cursor: pointer;
+}
+
+.circle:hover {
+    border: 2px solid white;
+}
+
+.circle.active {
+    background-color: #b2a8d3;
+}

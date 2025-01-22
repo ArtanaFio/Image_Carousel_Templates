@@ -34,7 +34,19 @@ This project uses images, SVGs, and fonts from the following sources:
 
 ## Images
 
-- [Image Name or Description] - Sourced from [Website Name] ([URL])
+- Floating Market by Nam Phong Bùi: https://www.pexels.com/photo/tourists-riding-a-boat-2108831/
+- Nakhon, Thailand by Javon Swaby: https://www.pexels.com/photo/photo-of-pagodas-during-daytime-2797526/
+- White Temple by Pixabay: https://www.pexels.com/photo/gray-pointed-concrete-structure-460376/
+- Boats on the Beach by Nicolas Postiglioni: https://www.pexels.com/photo/closeup-photo-of-brown-wooden-fence-with-multi-colored-fabric-tie-824298/
+- Tuk-tuk by Ingo Joseph: https://www.pexels.com/photo/person-driving-a-motorcycle-1682752/
+- Royal Khon by allPhoto Bangkok: https://www.pexels.com/photo/traditional-khmer-show-14591806/
+
+- Empty White Hallway by Francesco Paggiaro: https://www.pexels.com/photo/empty-hallway-1209962/
+- Lone Chair by Pixabay: https://www.pexels.com/photo/grayscale-photo-of-chair-inside-the-establishment-162389/
+- Afghanistan Ruins  by Suliman Sallehi: https://www.pexels.com/photo/gray-concrete-building-on-top-of-hill-1484776/
+- Spiraling Stairs by Wendelin Jacober: https://www.pexels.com/photo/top-view-of-stairs-1411400/
+- Abandoned Books by Wendelin Jacober: https://www.pexels.com/photo/brown-paper-lot-on-floor-near-brown-wall-1411426/
+
 
 ## SVGs
 
