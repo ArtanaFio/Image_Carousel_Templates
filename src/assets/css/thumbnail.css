@@ -1,0 +1,69 @@
+:root {
+    --pic-3-width: 200px;
+    --pic-3-height: 100px;
+    --active-width: 300px;
+    --active-height: 150px;
+    --reel-3-width: 1500px;
+    --thumbnail-width: 50px;
+    --thumbnail-height: 25px;
+}
+
+.pic-3 {
+    width: var(--pic-3-width);
+    height: var(--pic-3-height);
+}
+
+.pic-3.active {
+    width: var(--active-width);
+    height: var(--active-height);
+}
+
+.thumbnail {
+    width: var(--thumbnail-width);
+    height: var(--thumbnail-height);
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    box-shadow: 0.25px 0.25px 5px #b2a8d3, -0.25px -0.25px 5px #b2a8d3, -0.25px 0.25px 5px #b2a8d3, 0.25px -0.25px 5px #b2a8d3;
+}
+
+.thumbnail.active {
+    box-shadow: 1px 1px 5px white, -1px -1px 5px white, -1px 1px 5px white, 1px -1px 5px white;
+}
+
+.window {
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+}
+
+#reel-3 {
+    width: var(--reel-3-width);
+    gap: 10px;
+    margin-left: var(--pic-3-width);
+    align-items: center;
+}
+
+#prev-box-3 {
+    left: 0px;
+}
+
+#next-box-3 {
+    right: 0px;
+}
+
+.box-3 {
+    position: absolute;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.box-3:hover {
+    background-color: black;
+}
+
+.arrow-button-3 {
+    cursor: pointer;
+}

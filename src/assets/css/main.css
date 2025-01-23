@@ -16,7 +16,39 @@ body {
     justify-content: center;
 }
 
+#title {
+    font-size: 3rem;
+}
+
 h1 {
     color: white;
+    margin-top: 10vh;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
     margin-top: 5vh;
+}
+
+.top {
+    display: flex;
+}
+
+.album {
+    display: flex;
+}
+
+.side-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navigation-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }

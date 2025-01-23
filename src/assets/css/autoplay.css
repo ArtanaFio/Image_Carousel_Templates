@@ -1,12 +1,12 @@
 :root {
-    --picture-width: 400px;
-    --picture-height: 200px;
-    --reel-width: 2400px;
+    --pic-2-width: 400px;
+    --pic-2-height: 200px;
+    --reel-2-width: 2400px;
 }
 
 .pic-2 {
-    width: var(--picture-width);
-    height: var(--picture-height);
+    width: var(--pic-2-width);
+    height: var(--pic-2-height);
     opacity: 25%;
 }
 
@@ -14,21 +14,10 @@
     opacity: 100%;
 }
 
-#carousel-2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vh;
-}
-
-#top-2 {
-    display: flex;
-}
-
 #reel-2 {
-    width: var(--reel-width);
-    display: flex;
+    width: var(--reel-2-width);
     gap: 10px;
-    margin-left: var(--picture-width);
+    margin-left: var(--pic-2-width);
 }
 
 .viewport {
@@ -37,11 +26,11 @@
     overflow: hidden;
 }
 
-#prev-box-1 {
+#prev-box-2 {
     left: 0px;
 }
 
-#next-box-1 {
+#next-box-2 {
     right: 0px;
 }
 

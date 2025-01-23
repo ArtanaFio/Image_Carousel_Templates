@@ -1,44 +1,23 @@
 
 :root {
-    --picture-width: 800px;
-    --picture-height: 400px;
-    --reel-width: 4000px;
+    --pic-1-width: 800px;
+    --pic-1-height: 400px;
+    --reel-1-width: 4000px;
 }
 
 .pic-1 {
-    width: var(--picture-width);
-    height: var(--picture-height);
-}
-
-#carousel-1 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vh;
-}
-
-#top-1 {
-    display: flex;
-}
-
-.album {
-    display: flex;
+    width: var(--pic-1-width);
+    height: var(--pic-1-height);
 }
 
 #reel-1 {
-    width: var(--reel-width);
+    width: var(--reel-1-width);
 }
 
 .picture-frame {
     position: relative;
-    width: var(--picture-width);
+    width: var(--pic-1-width);
     overflow: hidden;
-}
-
-.side-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 
 #prev-box-1 {
@@ -53,15 +32,8 @@
     width: 75px;
 }
 
-.arrow-button.active {
+.arrow-button-1.active {
     cursor: pointer;
-}
-
-.navigation-box {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
 }
 
 .circle {
