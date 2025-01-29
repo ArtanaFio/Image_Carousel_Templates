@@ -1,0 +1,78 @@
+:root {
+    --pic-4-width: 200px;
+    --pic-4-height: 100px;
+    --active-4-width: 300px;
+    --active-4-height: 150px;
+    --reel-4-width: 1350px;
+    --viewport-width: 710px;
+    --thumbnail-2-width: 25px;
+    --thumbnail-2-height: 25px;
+    --thumbnail-2-active-width: 50px;
+}
+
+.pic-4 {
+    width: var(--pic-4-width);
+    height: var(--pic-4-height);
+    opacity: 0.25;
+}
+
+.pic-4.active {
+    width: var(--active-4-width);
+    height: var(--active-4-height);
+    opacity: 1;
+}
+
+.thumbnail-2 {
+    width: var(--thumbnail-2-width);
+    height: var(--thumbnail-2-height);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 0.5s ease, border-radius 0.3s ease 0.3s;
+}
+
+.thumbnail-2:hover {
+    width: var(--thumbnail-2-active-width);
+    border-radius: 0px;
+}
+
+.thumbnail-2.active {
+    width: var(--thumbnail-2-active-width);
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px white, -1px -1px 5px white, -1px 1px 5px white, 1px -1px 5px white;
+}
+
+.slideshow {
+    position: relative;
+    display: flex;
+    width: var(--viewport-width);
+    overflow: hidden;
+}
+
+#reel-4 {
+    width: var(-reel-4-width);
+    gap: 10px;
+    align-items: center;
+    margin-left: var(--pic-4-width);
+}
+
+#prev-box-4 {
+    left: 0;
+}
+
+#next-box-4 {
+    right: 0;
+}
+
+.box-4 {
+    position: absolute;
+    height: 100%;
+}
+
+.arrow-button-4 {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-button-4:hover {
+    background-image: radial-gradient(white, transparent 75%);
+}

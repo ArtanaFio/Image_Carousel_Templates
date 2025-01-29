@@ -7,11 +7,11 @@
 .pic-2 {
     width: var(--pic-2-width);
     height: var(--pic-2-height);
-    opacity: 25%;
+    opacity: 0.25;
 }
 
 .pic-2.active {
-    opacity: 100%;
+    opacity: 1;
 }
 
 #reel-2 {
