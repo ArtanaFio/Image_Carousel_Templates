@@ -20,19 +20,19 @@ function interactiveArrows() {
     }
 
     prevButton.addEventListener("click", () => {
-        if (moveLeft >= 0) {
+        if (moveLeft >= -10) {
             leftBox.style.display = "none";
         } else {
             leftBox.style.display = "flex";
         }
 
-        if (moveLeft >= -600) {
+        if (moveLeft >= -640) {
             rightBox.style.display = "flex";
         }
     });
 
     nextButton.addEventListener("click", () => {
-        if (moveLeft <= -400) {
+        if (moveLeft <= -430) {
             rightBox.style.display = "none";
         } else {
             rightBox.style.display = "flex";
@@ -46,14 +46,14 @@ function interactiveArrows() {
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener("click", (event) => {
             let thumbnailIndex = thumbnails.indexOf(event.target);
-            moveLeft = 200 - (thumbnailIndex * 200);
-            if (moveLeft <= 0) {
+            moveLeft = 200 - (thumbnailIndex * 210);
+            if (moveLeft <= -10) {
                 leftBox.style.display = "flex";
             } else {
                 leftBox.style.display = "none";
             } 
 
-            if (moveLeft >= -400) {
+            if (moveLeft >= -430) {
                 rightBox.style.display = "flex";
             } else {
                 rightBox.style.display = "none";
@@ -64,7 +64,7 @@ function interactiveArrows() {
 interactiveArrows();
 
 function nextImage() {
-    moveLeft -= 200;
+    moveLeft -= 210;
     reel.style.marginLeft = `${moveLeft}px`;
 
     centerImage++;
@@ -77,7 +77,7 @@ function nextImage() {
 };
 
 function previousImage() {
-    moveLeft += 200;
+    moveLeft += 210;
     reel.style.marginLeft = `${moveLeft}px`;
 
     centerImage--;
@@ -96,7 +96,7 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-    if (moveLeft > -600) {
+    if (moveLeft > -640) {
         nextImage();
     }
 });
@@ -105,7 +105,7 @@ function clickAThumbnail() {
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener("click", (event) => {
             let thumbnailIndex = thumbnails.indexOf(event.target);
-            moveLeft = 200 - (thumbnailIndex * 200);
+            moveLeft = 200 - (thumbnailIndex * 210);
             centerImage = thumbnailIndex;
             centerThumbnail = thumbnailIndex;
 
@@ -120,12 +120,3 @@ function clickAThumbnail() {
     });
 };
 clickAThumbnail();
-
-/*
-left margin:
-1st @ 200px
-2st @ 0px
-3rd @ -200px
-4th @ -400px
-5th @ -600px
-*/

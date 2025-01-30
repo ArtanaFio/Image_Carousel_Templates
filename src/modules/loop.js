@@ -76,7 +76,6 @@ function buttonLoopInteraction(value) {
     }
 };
 
-
 function nextImage() {
     moveLeft -= 210;
     reel.style.marginLeft = `${moveLeft}px`;
@@ -138,13 +137,11 @@ clickAThumbnail();
 function loop() {
     const loopIntervalId = setInterval(() => {
         loopValue++;
-        console.log(`loopValue: ${loopValue}`);
         if (moveLeft <= -850) {
             moveLeft = 410;
             centerImage = -1;
             centerThumbnail = -1;
             loopValue = 0;
-            console.log(`new loopValue: ${loopValue}`);
         }
         buttonLoopInteraction(loopValue);
         nextImage();
@@ -168,12 +165,3 @@ function loop() {
     });
 };
 loop();
-
-/*
-1st @ 200px   keep at 200px decrease by -210px
-2nd @ 0px     -10px
-3rd @ -200px  -220px
-4th @ -400px  -430px
-5th @ -600px  -640px
-6th @ -800px  -850px
-*/
